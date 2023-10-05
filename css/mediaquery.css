@@ -1,0 +1,60 @@
+:root {
+    --primary_color: #232323;
+    --blackBKG_font_color: #fea;
+    --smoothBKG_color: #aaa;
+    --titleBKG_color: rgba(255, 255, 255, 0.5);
+    --transparentChevron_color: rgba(255, 255, 255, 0);
+    --ligthBKG_font_color: #ded;
+    --smoothBKG_color_semitransparent: rgba(170, 170, 170, 0.75);
+    --secondary_color: #3f4040;
+}
+@media only screen and (min-width: 300px) and (max-width: 576px) {
+    header>div:first-child {
+        display: none;
+    }
+    a#XeroBooks {
+        margin-left: 5px;
+    }
+    nav#navPanel{
+        display: none;
+    }
+
+    body>article {
+        margin-top: 10px;
+    }
+
+    div.searchBar{
+        width: 70px;
+        font-size: 2rem;
+        text-align: center;
+        display: block;
+    }
+    div.searchPhone {
+        float: left;
+        margin-top: 75px;
+        margin-left: 5%;
+        width: 100%;
+        height: 30px;
+        display: block;
+    }
+    div.searchPhone>input{
+        width: 85%;
+        height: 100%;
+    }
+    div.searchPhone>button {
+        width: 10%;
+        height: 100%;
+    }
+
+    div.navPhonePanel{
+        background-color: var(--primary_color);
+        float: left;
+        margin-top: 75px;
+        margin-right: 2.5%;
+        width: 22.5%;
+        height: 30px;
+    }
+    div.navPhonePanel>ul>li{
+        color: var(--blackBKG_font_color);
+    }
+}

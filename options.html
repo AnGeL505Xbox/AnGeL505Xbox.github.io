@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./js/carrousel.js"></script>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript">
+        function searchBar() { window.location.href = "./search.html" }
+    </script>
+</head>
+<body>
+    <header>
+        <div>
+            <input type="search" name="" id="">
+            <button id="search" onclick="searchBar()"><i class="fa fa-search"></i></button>
+        </div>
+        <div>
+            <a href="./index.html" id="XeroBooks">XeroBooks</a>
+        </div>
+        <nav>
+        </nav>
+        <div id="navPanel">
+            <ul>
+                <li><a href="./myreading.html" id="navTexts">Mis lectura y creaciones</a></li>
+                <li><a href="./options.html" id="navTexts">Opciones</a></li>
+                <li><a href="./login.html" id="navTexts">Login</a></li>
+            </ul>
+        </div>
+    </header>
+    <aside id="optionMenu">
+        <a href="">Cuenta</a>
+        <a href="">Lenguaje</a>
+    </aside>
+    <article id="optionArticle">
+        <p class="subtitle" style="width: 90%;">Opciones</p>
+        <p class="subtitle">Nombre</p>
+        <input type="text" class="textbox" id="cTitle" placeholder="Elena Gomez">
+        <p class="subtitle">Usuario</p>
+        <input type="text" class="textbox" id="cTitle" placeholder="Elena nito">
+        <p class="subtitle">Correo</p>
+        <input type="text" class="textbox" id="cTitle" placeholder="elenanito320@google.ru">
+        <p class="subtitle">Contraseña</p>
+        <input type="password" class="textbox" id="cTitle">
+        <div>
+            <button type="button">Cambiar</button>
+            <button type="button">Borrar</button>
+        </div>
+    </article>
+    <footer>
+        Acerca de nosotros
+    </footer>
+</body>
+</html>

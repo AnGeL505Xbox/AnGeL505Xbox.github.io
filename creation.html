@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creando</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript">
+        function searchBar() { window.location.href = "./search.html" }
+    </script>
+</head>
+<body>
+    <header>
+        <div>
+            <input type="search" name="" id="">
+            <button id="search" onclick="searchBar()"><i class="fa fa-search"></i></button>
+        </div>
+        <div>
+            <a href="./index.html" id="XeroBooks">XeroBooks</a>
+        </div>
+        <nav>
+        </nav>
+        <div id="navPanel">
+            <ul>
+                <li><a href="./myreading.html" id="navTexts">Mis lectura y creaciones</a></li>
+                <li><a href="./options.html" id="navTexts">Opciones</a></li>
+                <li><a href="./login.html" id="navTexts">Login</a></li>
+            </ul>
+        </div>
+    </header>
+    <article style="height: auto;">
+        <div style="background-image: url(./img/clocktown.jpg); width: 80%; height: 200px; background-size: 100% 400%; margin-top: 10px;"></div>
+        <p class="subtitle" style="width: 80%;">Titulo</p>
+        <input type="text" name="" id="cTitle" class="textbox">
+        <p class="subtitle" style="width: 80%;">Descripcion</p>
+        <textarea name="" id="cDescription" class="textbox" style="resize: none;"></textarea>
+        <p class="subtitle" style="width: 80%;">Contenido</p>
+        <textarea name="" id="cText" class="textbox" style="resize: none;"></textarea>
+        <p class="subtitle">Genero</p>
+        <select name="" id="cGen">
+            <option value="" disabled selected>--Genero--</option>
+            <option value="1">Accion & aventura</option>
+            <option value="2">Romance</option>
+            <option value="3">Comedia</option>
+            <option value="3">Ficcion</option>
+            <option value="3">Ciencia Ficcion</option>
+        </select>
+    </article>
+    <footer>
+        Acerca de nosotros
+    </footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi lectura</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript">
+        function changeStory() { window.location.href = "./reading.html" }
+        function searchBar() { window.location.href = "./search.html" }
+    </script>
+</head>
+<body>
+    <header>
+        <div>
+            <input type="search" name="" id="">
+            <button id="search" onclick="searchBar()"><i class="fa fa-search"></i></button>
+        </div>
+        <div>
+            <a href="./index.html" id="XeroBooks">XeroBooks</a>
+        </div>
+        <nav>
+        </nav>
+        <div id="navPanel">
+            <ul>
+                <li><a href="./myreading.html" id="navTexts">Mis lectura y creaciones</a></li>
+                <li><a href="./options.html" id="navTexts">Opciones</a></li>
+                <li><a href="./login.html" id="navTexts">Login</a></li>
+            </ul>
+        </div>
+    </header>
+    <article class="autoAD">
+        <div>
+            <p class="subtitle">Mis creaciones
+                <a href="./creation.html" style="text-decoration: none; color: #000;"><i class="fa fa-plus"></i></a>
+            </p>
+        </div>
+        <div id="card">
+            <img src="./img/clocktown.jpg" alt="" id="frontBook">
+            <div id="texts">
+                <p id="title">Titulo chidote</p>
+                <p id="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A iste placeat nostrum explicabo voluptatem quis earum, modi dicta delectus rem perferendis, ad assumenda incidunt esse harum repellat? Ab, libero consectetur!</p>
+            </div>
+            <div id="icons">
+                <i class="fa fa-trash"></i>
+                <i class="fa fa-pen-to-square"></i>
+            </div>
+        </div>
+        <div id="card">
+            <img src="./img/futuristic.jpg" alt="" id="frontBook">
+            <div id="texts">
+                <p id="title">Titulo futurista</p>
+                <p id="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A iste placeat nostrum explicabo voluptatem quis earum, modi dicta delectus rem perferendis, ad assumenda incidunt esse harum repellat? Ab, libero consectetur!</p>
+            </div>
+            <div id="icons">
+                <i class="fa fa-trash"></i>
+                <i class="fa fa-pen-to-square"></i>
+            </div>
+        </div>
+    </article>
+    <article class="autoAD">
+        <p class="subtitle">Mi lectura</p>
+        <div id="card">
+            <img src="./img/clocktown.jpg" alt="" id="frontBook">
+            <div id="texts">
+                <p id="title">Ciudad Reloj</p>
+                <p id="description">Este libro cuenta la historia de un chico en una ciudad con una torre de reloj que es posible verse desde muy lejos</p>
+            </div>
+            <div id="icons">
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+            <div id="card" onclick="changeStory()">
+                <img src="./img/blackhole.jpg" alt="" id="frontBook">
+                <div id="texts">
+                    <p id="title">Lisbeth y la Inquisición</p>
+                    <p id="description">Lisbeth se vera envuelta en una guerra civil, en la cual debera de decidir a que bando unirse.</p>
+                </div>
+                <div id="icons">
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+    </article>
+    <footer>
+        Acerca de nosotros
+    </footer>
+</body>
+</html>
