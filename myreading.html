@@ -9,6 +9,21 @@
     <script type="text/javascript">
         function changeStory() { window.location.href = "./reading.html" }
         function searchBar() { window.location.href = "./search.html" }
+        var count = 0
+        function showNav() {
+            count ++;
+            if (count > 1){
+                document.getElementById("searchPhone").style.width = "72.5%";
+                document.getElementById("searchPhone").style.marginLeft = "2.5%";
+                document.getElementById("navPhonePanel").style.display = "block";
+                document.getElementById("navPhonePanel").style.display = "block";
+                count = 0;
+            } else if (count == 1){
+                document.getElementById("searchPhone").style.width = "95%";
+                document.getElementById("searchPhone").style.marginLeft = "5%";
+                document.getElementById("navPhonePanel").style.display = "none";
+            }
+        }
     </script>
 </head>
 <body>
@@ -20,16 +35,28 @@
         <div>
             <a href="./index.html" id="XeroBooks">XeroBooks</a>
         </div>
-        <nav>
+        <nav id="navPanel">
+                <ul>
+                    <li><a href="./myreading.html" id="navTexts">Mis lectura y creaciones</a></li>
+                    <li><a href="./options.html" id="navTexts">Opciones</a></li>
+                    <li><a href="./login.html" id="navTexts">Login</a></li>
+                </ul>
         </nav>
-        <div id="navPanel">
-            <ul>
-                <li><a href="./myreading.html" id="navTexts">Mis lectura y creaciones</a></li>
-                <li><a href="./options.html" id="navTexts">Opciones</a></li>
-                <li><a href="./login.html" id="navTexts">Login</a></li>
-            </ul>
+        <div class="searchBar" onclick="showNav()">
+            <i class="fa-solid fa-bars"></i>
         </div>
     </header>
+    <div class="searchPhone" id="searchPhone">
+        <input type="search" name="" id="">
+        <button id="search" onclick="searchBar()"><i class="fa fa-search"></i></button>
+    </div>
+    <div class="navPhonePanel" id="navPhonePanel">
+        <ul>
+            <li><a href="./myreading.html" id="navTexts">Mis lectura y creaciones</a></li>
+            <li><a href="./options.html" id="navTexts">Opciones</a></li>
+            <li><a href="./login.html" id="navTexts">Login</a></li>
+        </ul>
+    </div>
     <article class="autoAD">
         <div>
             <p class="subtitle">Mis creaciones

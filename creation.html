@@ -5,11 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creando</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mediaquery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="text/javascript">
         function searchBar() { window.location.href = "./search.html" }
+        var count = 0
+        function showNav() {
+            count ++;
+            if (count > 1){
+                document.getElementById("searchPhone").style.width = "72.5%";
+                document.getElementById("searchPhone").style.marginLeft = "2.5%";
+                document.getElementById("navPhonePanel").style.display = "block";
+                document.getElementById("navPhonePanel").style.display = "block";
+                count = 0;
+            } else if (count == 1){
+                document.getElementById("searchPhone").style.width = "95%";
+                document.getElementById("searchPhone").style.marginLeft = "5%";
+                document.getElementById("navPhonePanel").style.display = "none";
+            }
+        }
     </script>
 </head>
+
 <body>
     <header>
         <div>
@@ -19,16 +36,28 @@
         <div>
             <a href="./index.html" id="XeroBooks">XeroBooks</a>
         </div>
-        <nav>
+        <nav id="navPanel">
+                <ul>
+                    <li><a href="./myreading.html" id="navTexts">Mis lectura y creaciones</a></li>
+                    <li><a href="./options.html" id="navTexts">Opciones</a></li>
+                    <li><a href="./login.html" id="navTexts">Login</a></li>
+                </ul>
         </nav>
-        <div id="navPanel">
-            <ul>
-                <li><a href="./myreading.html" id="navTexts">Mis lectura y creaciones</a></li>
-                <li><a href="./options.html" id="navTexts">Opciones</a></li>
-                <li><a href="./login.html" id="navTexts">Login</a></li>
-            </ul>
+        <div class="searchBar" onclick="showNav()">
+            <i class="fa-solid fa-bars"></i>
         </div>
     </header>
+    <div class="searchPhone" id="searchPhone">
+        <input type="search" name="" id="">
+        <button id="search" onclick="searchBar()"><i class="fa fa-search"></i></button>
+    </div>
+    <div class="navPhonePanel" id="navPhonePanel">
+        <ul>
+            <li><a href="./myreading.html" id="navTexts">Mis lectura y creaciones</a></li>
+            <li><a href="./options.html" id="navTexts">Opciones</a></li>
+            <li><a href="./login.html" id="navTexts">Login</a></li>
+        </ul>
+    </div>
     <article style="height: auto;">
         <div style="background-image: url(./img/clocktown.jpg); width: 80%; height: 200px; background-size: 100% 400%; margin-top: 10px;"></div>
         <p class="subtitle" style="width: 80%;">Titulo</p>

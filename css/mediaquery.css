@@ -33,7 +33,7 @@
         float: left;
         margin-top: 75px;
         margin-left: 5%;
-        width: 100%;
+        width: 95%;
         height: 30px;
         display: block;
     }
@@ -48,13 +48,18 @@
 
     div.navPhonePanel{
         background-color: var(--primary_color);
-        float: left;
-        margin-top: 75px;
-        margin-right: 2.5%;
-        width: 22.5%;
-        height: 30px;
+        float: right;
+        margin-top: 70px;
+        margin-left: 75%;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        width: 25%;
+        height: auto;
+        position: fixed;
+        z-index: 10;
     }
     div.navPhonePanel>ul>li{
         color: var(--blackBKG_font_color);
+        list-style: none;
     }
 }
