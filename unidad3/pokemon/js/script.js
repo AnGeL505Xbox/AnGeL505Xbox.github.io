@@ -1,25 +1,21 @@
 window.onload = () => {
     var arreglo = [];
     var cont = 0;
-
-
-    var ll = 'official-artwork'
+    
     var url = 'https://pokeapi.co/api/v2/';
     fetch(url + 'pokemon?limit=151').then(response => response.json())
         .then(data => {
             console.log(data);
             let lista = document.querySelector('#lista');
             data.results.forEach(element => {
-                fetch(element.url).then(res=>res.json())
-                .then(dataPokemon=>{
-                    console.log(dataPokemon);
+                fetch(element.url).then(res=>res.json()).then(dataPokemon=>{
 
                     lista.innerHTML = lista.innerHTML + `<div class="col-3 p-5">
                                                     <div class="card" style="width: 18rem;">
-                                                    <img src="${dataPokemon.sprites.other.home.front_default}" class="card-img-top" alt="">
+                                                    <img src="${dataPokemon.sprites.other["official-artwork"].front_default}" class="card-img-top" alt="">
                                                     <div class="card-body">
                                                         <h5 class="card-title">${element.name}</h5>
-                                                        <p class="card-text"> Es un Pokémon de tipo hada/lucha introducido en la novena generación. Es el Pokémon paradoja del futuro relacionado con Gardevoir y Gallade.</p>
+                                                        <p class="card-text"></p>
                                                         <a data-id="${cont}" href="#" class="btnVrt btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Elegir</a>
                                                         </div>
                                                     </div>
