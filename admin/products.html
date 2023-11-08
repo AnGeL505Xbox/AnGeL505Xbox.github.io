@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <nav class="px-4 navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #232323;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="fa fa-book-skull"></i>
+                    XeroBooks
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--End Header-->
+    <div class="row">
+        <aside class="col-md-2 p-4">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="#">
+                        <i class="fa fa-home mx-2" style="width: 30px;"></i>
+                        Inicio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted text-dark" href="./products.html">
+                        <i class="fa fa-book mx-2" style="width: 30px;"></i>
+                        Productos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted text-dark" href="./users.html">
+                        <i class="fa fa-users mx-2" style="width: 30px;"></i>
+                        Usuarios
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="col-10">
+            <h1>Agregar Producto</h1>
+            <div class="row">
+                <form action="">
+                    <div class="mb-3 col-6">
+                        <label for="txtNombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="txtNombre">
+                    </div>
+                    <div class="mb-3 col-6">
+                        <label for="txtPrice" class="form-label">Precio</label>
+                        <input placeholder="Introduce el precio" min="1" type="number" class="form-control" id="txtPrice">
+                    </div>
+                    <div class="mb-3 col-6">
+                        <label for="txtStock" class="form-label">Cantidad</label>
+                        <input placeholder="Introduce el stock" min="1" type="number" class="form-control" id="txtStock">
+                    </div>
+                    <div class="mb-3 col-6">
+                        <label for="txtCategory" class="form-label">Categoria</label>
+                        <select name="" id="txtCategory" class="form-control">
+                            <option value="" selected disabled>--Selecciona una opcion--</option>
+                            <option value="">Ebook (PDF)</option>
+                            <option value="">Libro fisico(Pasta blanda)</option>
+                            <option value="">Libro fisico (Pasta dura)</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 col-6">
+                        <label for="txtFile" class="form-label">Archivo</label>
+                        <input type="file" class="form-control" id="txtFile">
+                    </div>
+                    <div class="mb-3 col-6">
+                        <button class="btn btn-dark">Aceptar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
